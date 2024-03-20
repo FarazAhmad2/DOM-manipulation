@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#counter {
+    margin: 50px;
+    width: 100%;
+    padding-left: 12%;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 300;
+    margin-right: 2em;
+}
+
+.display {
+    width: 100%;
+    height: 130px;
+}
+
+.count {
+    text-decoration: underline;
+    text-underline-offset: 0.8em;
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+.error {
+    color: red;
+    font-weight: 300;
+    padding-top: 7px;
+}
+
+.btns {
+    height: auto;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#increment, #decrement {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    width: 140px;
+    height: 35px;
+    line-height: 0.2em;
+}
+
+#clear {
+    border: 1px solid white;
+    padding: 10px 30px;
+    width: 140px;
+    height: 35px;
+    line-height: 0.2em;
+}
+
+@media screen and (max-width: 576px) {
+    .btns {
+        flex-direction: column;
+    }
+
+    #increment {
+        order: -1;
+    }   
+}
